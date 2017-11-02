@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Geo lokacija</title>
+  <meta name="GENERATOR" content="WDL-Website-Builder">
+  <meta charset="utf-8"><!--        -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+</script><!--      -->
+
+<script language="Javascript" type="text/javascript">
+  function pisi(){
+
+        var x=document.forms["dozvola"]["ocitaj_lokaciju"].value;
+        document.getElementById("demo").innerHTML=x;
+  }
+  
+</script>
+</head>
+
+<body background="pozadina_1.jpg">
+  <div class="container-fluid">
+    <br>
+
+    <p><strong><u><font color="#000066"><strong><u>Geolokacija by Slobodanka Nedeljkovic</u></strong></font></u></strong></p><br>
+
+    <p>Da li dozvoljavate da se o&#269;ita Va&#353;a lokacija ?</p>
+
+    <form method="get" name="dozvola">
+      <p><input onclick="pisi()" value="Vi imate dozvolu o&#269;itavanja. Va&#353;a lokacija je: " type="radio" name="ocitaj_lokaciju"> Dozvoli</p>
+
+      <p><input onclick="pisi()" value="Vi nemate dozvolu o&#269;itavanja lokacije." type="radio" name="ocitaj_lokaciju"> Ne dozvoli</p>
+    </form>
+
+    <p id="demo">&nbsp;</p>
+  </div>
+</body>
+</html>
